@@ -1,8 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:hardware_buttons_find_flutter/hardware_buttons_find_flutter_method_channel.dart'
-as hardware_buttons;
 
 class HardwareButtonFindPage extends StatefulWidget {
   const HardwareButtonFindPage({Key? key}) : super(key: key);
@@ -19,11 +17,7 @@ class _HardwareButtonFindPageState extends State<HardwareButtonFindPage> {
   @override
   void initState() {
     super.initState();
-    _buttonSubscription = hardware_buttons.buttonEvents?.listen((event) {
-      setState(() {
-        _latestHardwareButtonEvent = event.toString();
-      });
-    });
+
   }
 
   @override

@@ -1,41 +1,41 @@
 {
   "project_info": {
-    "project_number": "270413666058",
-    "project_id": "udoc-47be9",
-    "storage_bucket": "udoc-47be9.appspot.com"
+    "project_number": "163663536404",
+    "project_id": "uia-copy",
+    "storage_bucket": "uia-copy.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:270413666058:android:e38633e3e99ae29c584cf3",
+        "mobilesdk_app_id": "1:163663536404:android:43ec07f2105a686e0aa201",
         "android_client_info": {
-          "package_name": "com.example.udoc"
+          "package_name": "com.example.code_debugger"
         }
       },
       "oauth_client": [
         {
-          "client_id": "270413666058-2ces98ctmb4mu5f3jc930voil0q8isv0.apps.googleusercontent.com",
+          "client_id": "163663536404-pg3i0darofm7p3mqf3s8h9d3sq8038s8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.udoc",
+            "package_name": "com.example.code_debugger",
             "certificate_hash": "67313b2232e07d3785d4c6fbf3c0ceeb1e2672b4"
           }
         },
         {
-          "client_id": "270413666058-56eqe1v76ur47a30ec0ukj48prebknjv.apps.googleusercontent.com",
+          "client_id": "163663536404-i37aadntgdosmc5adf7f97qj1uov6oq8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCEg5IeROAuTGPL07DKeVo4FyWM489FO_g"
+          "current_key": "AIzaSyD0W-JHx9si38fPsSMHsEXBGQM-RleYm6I"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "270413666058-56eqe1v76ur47a30ec0ukj48prebknjv.apps.googleusercontent.com",
+              "client_id": "163663536404-i37aadntgdosmc5adf7f97qj1uov6oq8.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
