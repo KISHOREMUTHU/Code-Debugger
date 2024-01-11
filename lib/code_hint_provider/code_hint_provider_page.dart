@@ -50,19 +50,20 @@ class _CodeHintProviderPageState extends State<CodeHintProviderPage> {
         ),
         backgroundColor: Color(0xFFE9EFC0),
       ),
-      body: SingleChildScrollView(
-        child: Container(
-          height: size.height,
-          decoration: BoxDecoration(
-              image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: AssetImage(
-                      'assets/login_bg.gif'
-                  )
-              )
-          ),
-          child: Center(
+      body: Container(
+        height: size.height,
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage(
+                    'assets/login_bg.gif'
+                )
+            )
+        ),
+        child: Center(
+          child: SingleChildScrollView(
             child: Column(
+
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(height: 30,),
@@ -151,14 +152,19 @@ class _CodeHintProviderPageState extends State<CodeHintProviderPage> {
                   ),
                 ),
 
-                Row(
+               Center(
 
-                  children: [
-                    SolutionButton(code:code, platform: platform, problem: problem,language: language),
-                    HintButton(code:code, platform: platform, problem: problem,language: language),
+                 child:  Row(
+                   mainAxisAlignment: MainAxisAlignment.center,
+                   crossAxisAlignment: CrossAxisAlignment.center,
 
-                  ],
-                )
+                   children: [
+                     SolutionButton(code:code, platform: platform, problem: problem,language: language),
+                     HintButton(code:code, platform: platform, problem: problem,language: language),
+
+                   ],
+                 ),
+               )
 
               ],
             ),

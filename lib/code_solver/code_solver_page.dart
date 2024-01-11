@@ -56,75 +56,77 @@ class _CodeSolverPageState extends State<CodeSolverPage> {
               )
           ),
           child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SizedBox(height: 30,),
-                TextFieldController(
-                  child: TextField(
-                    controller: codeController,
-                    onChanged: (value) {
-                      setState(() {
-                        code = value;
-                        print(code);
-                      });
-                    },
-                    maxLines: 15,
-                    decoration: const InputDecoration(
-                      icon: Icon(
-                        Icons.laptop_mac_outlined,
-                        color: Colors.grey,
-                      ),
-                      hintText: "Paste your code here",
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(height: 30,),
+                  TextFieldController(
+                    child: TextField(
+                      controller: codeController,
+                      onChanged: (value) {
+                        setState(() {
+                          code = value;
+                          print(code);
+                        });
+                      },
+                      maxLines: 15,
+                      decoration: const InputDecoration(
+                        icon: Icon(
+                          Icons.laptop_mac_outlined,
+                          color: Colors.grey,
+                        ),
+                        hintText: "Paste your code here",
 
-                      border: InputBorder.none,
+                        border: InputBorder.none,
+                      ),
                     ),
                   ),
-                ),
-                TextFieldController(
-                  child: TextField(
-                    controller: languageController,
-                    onChanged: (value) {
-                      setState(() {
-                        language = value;
-                        print(language);
-                      });
-                    },
-                    maxLines: 1,
-                    decoration: const InputDecoration(
-                      icon: Icon(
-                        Icons.code,
-                        color: Colors.grey,
-                      ),
-                      hintText: "Language",
+                  TextFieldController(
+                    child: TextField(
+                      controller: languageController,
+                      onChanged: (value) {
+                        setState(() {
+                          language = value;
+                          print(language);
+                        });
+                      },
+                      maxLines: 1,
+                      decoration: const InputDecoration(
+                        icon: Icon(
+                          Icons.code,
+                          color: Colors.grey,
+                        ),
+                        hintText: "Language",
 
-                      border: InputBorder.none,
+                        border: InputBorder.none,
+                      ),
                     ),
                   ),
-                ),
-                TextFieldController(
-                  child: TextField(
-                    controller: errorController,
-                    onChanged: (value) {
-                      setState(() {
-                        error = value;
-                        print(error);
-                      });
-                    },
-                    maxLines: 5,
-                    decoration: const InputDecoration(
-                      icon: Icon(
-                        Icons.error,
-                        color: Colors.grey,
-                      ),
-                      hintText: "Type your error facing here",
+                  TextFieldController(
+                    child: TextField(
+                      controller: errorController,
+                      onChanged: (value) {
+                        setState(() {
+                          error = value;
+                          print(error);
+                        });
+                      },
+                      maxLines: 5,
+                      decoration: const InputDecoration(
+                        icon: Icon(
+                          Icons.error,
+                          color: Colors.grey,
+                        ),
+                        hintText: "Type your error facing here",
 
-                      border: InputBorder.none,
+                        border: InputBorder.none,
+                      ),
                     ),
                   ),
-                ),
-                RoundedButton(code:code==null ? "": code, language: language==null? "": language,error: error==""? "not mentioned" : error,)
-              ],
+                  RoundedButton(code:code==null ? "": code, language: language==null? "": language,error: error==""? "not mentioned" : error,)
+                ],
+              ),
             ),
           ),
         ),

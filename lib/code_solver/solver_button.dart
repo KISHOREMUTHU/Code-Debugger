@@ -88,6 +88,7 @@ class _RoundedButtonState extends State<RoundedButton> {
       ),
     );
   }
+
   Future<String> generateResponse(String prompt) async {
     const apiKey = "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";
 
